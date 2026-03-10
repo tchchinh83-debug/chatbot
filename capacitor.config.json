@@ -1,0 +1,10 @@
+{
+  "appId": "com.company.tuvanbhxh",
+  "appName": "HeThongTuVa",
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchAutoHide": false
+    }
+  }
+}
