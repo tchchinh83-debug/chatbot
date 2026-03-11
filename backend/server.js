@@ -2,7 +2,15 @@ import express from "express";
 import cors from "cors";
 
 const app = express();
-app.use(cors());
+
+app.use(cors({
+  origin: "*",
+  methods: ["GET", "POST", "OPTIONS"],
+  allowedHeaders: ["Content-Type"]
+}));
+
+app.options("*", cors());
+
 app.use(express.json());
 
 app.get("/api/health", (req, res) => {
